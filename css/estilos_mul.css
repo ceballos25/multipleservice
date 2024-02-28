@@ -1,0 +1,321 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background: rgb(13, 0, 255);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(153, 185, 221, 0.7008928571428572) 52%);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+header {
+    background-color: rgba(153, 185, 221, 0.7);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
+    
+}
+
+.Tituloosm h1{
+    font-family: "Roboto", sans-serif;
+    color: #0062b3;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+/*la barra*/
+
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.75);
+
+}
+
+.ajustes-bienvenida{
+    font-size: 16px;
+    text-align: left; 
+    color: #000000;
+
+}
+
+#bienvenida p{
+    font-size: 18px ;
+}
+
+.carousel-indicators {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-indicators button {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+    margin: 0 3px; /* Reducir el margen para una apariencia más compacta */
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: #ffd700; /* Amarillo más oscuro para el botón activo */
+}
+
+
+.img-extra img {
+    width: 100%;
+    max-width: 535px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.img-extra img.hover-scale:hover {
+    transform: scaleX(1.1);
+}
+
+
+.barra {
+    font-family: "Roboto", sans-serif;
+    /* Alto y ancho de donde se va a activar cuando pase el mouse */
+    width: 10%;
+    height: 9%;
+    /* Para que este siempre en la misma parte de la pantalla aunque se haga scroll */
+    position: fixed;
+    right: 0;
+    /* Tiempo en el que va a transitar la animación */
+    transition: .4s all;
+    /* Este arriba de todo en la pantalla */
+    z-index: 1;  
+}
+
+.barra ul{
+
+    padding:0px;
+    text-align: center;
+}
+.barra  li{
+
+    transition:all .3s;
+    list-style: none; 
+ }
+ 
+ .barra a{
+    text-decoration: none;
+    
+    font-weight: normal;
+    
+ 
+    transition: .3s all ;
+ 
+    font-size: 0px;
+    padding:0px;
+ }
+ 
+ .barra  h2{
+    text-align: center;
+    color:white;
+    padding:7px;
+    padding-bottom:7px;
+ 
+ 
+    font-size:0px;   
+ }
+ 
+ .barra img{
+    padding-top: 30px;
+    padding-left: 10px;
+ }
+ 
+ .barra:hover{
+    width: 120%;
+    height: 120vh;
+    background: rgba(5, 33, 51, 0.98);
+ }
+ 
+ .barra:hover h2{
+    padding:15px;
+    font-size: 35px;
+ }
+ .barra:hover a{ 
+    font-size:20px ;
+    color:white;
+    display: block;
+    padding:20px;
+ }
+ .barra:hover img{
+ 
+    height:0px;
+ }
+ 
+ 
+ .barra:hover li{
+    border-top:1px solid #03121b;
+    
+    width:100%;
+ }
+ .barra:hover ul:last-of-type{
+ 
+ 
+    border-bottom: 1px solid #03121b;
+ }
+ 
+ .barra:hover a:hover{ 
+    font-size: 25px;
+    padding: 40px 0px; 
+    background: rgba(23, 78, 112, 0.98);  
+ }
+ 
+ @media (min-width: 768px){
+    .barra:hover{
+    width: 45%;
+    }
+ }
+
+
+.logo_header{
+    width: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+
+button {
+    background-color: rgb(5, 45, 119);
+    text-align: center;
+    padding: 6%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+.carrusel{
+    top: 50% !important;
+    span{
+        color: red;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ffd700;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.centered-button {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+}
+
+.modal-backdrop.show{
+    z-index: auto !important;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    padding-bottom: 31px !important;
+}
+
+
+.nav-item a {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Color de texto por defecto */
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-item a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor del sombreado */
+    bottom: 0;
+    left: 0;
+    background-color: rgba(153, 185, 221, 0.7); /* Color del sombreado */
+    transform-origin: bottom right;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-item a:hover::before {
+    transform-origin: bottom left;
+    transform: scale(1, 1);
+  }

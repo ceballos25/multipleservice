@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Arial', sans-serif;
+  background: rgb(13, 0, 255);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(153, 185, 221, 0.7008928571428572) 52%);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+header {
+  background-color: rgba(153, 185, 221, 0.7);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black;
+}
+
+/*la barra*/
+
+
+
+.barra {
+  font-family: 'Lato', sans-serif;
+  /* Alto y ancho de donde se va a activar cuando pase el mouse */
+  width: 10%;
+  height: 9%;
+  /* Para que este siempre en la misma parte de la pantalla aunque se haga scroll */
+  position: fixed;
+  right: 0;
+  /* Tiempo en el que va a transitar la animación */
+  transition: .4s all;
+  /* Este arriba de todo en la pantalla */
+  z-index: 1;  
+}
+
+.barra ul{
+
+  padding:0px;
+  text-align: center;
+}
+.barra  li{
+
+  transition:all .3s;
+  list-style: none; 
+}
+
+.barra a{
+  text-decoration: none;
+  
+  font-weight: normal;
+  
+
+  transition: .3s all ;
+
+  font-size: 0px;
+  padding:0px;
+}
+
+.barra  h2{
+  text-align: center;
+  color:white;
+  padding:7px;
+  padding-bottom:7px;
+
+
+  font-size:0px;   
+}
+
+.barra img{
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.barra:hover{
+  width: 120%;
+  height: 120vh;
+  background: rgba(5, 33, 51, 0.98);
+}
+
+.barra:hover h2{
+  padding:15px;
+  font-size: 35px;
+}
+.barra:hover a{ 
+  font-size:20px ;
+  color:white;
+  display: block;
+  padding:20px;
+}
+.barra:hover img{
+
+  height:0px;
+}
+
+
+.barra:hover li{
+  border-top:1px solid #03121b;
+  
+  width:100%;
+}
+.barra:hover ul:last-of-type{
+
+
+  border-bottom: 1px solid #03121b;
+}
+
+.barra:hover a:hover{ 
+  font-size: 25px;
+  padding: 40px 0px; 
+  background: rgba(23, 78, 112, 0.98);  
+}
+
+@media (min-width: 768px){
+  .barra:hover{
+  width: 45%;
+  }
+}
+
+
+.logo_header{
+  width: 10%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+
+button {
+  background-color: rgb(43, 74, 131);
+  text-align: center;
+  padding: 6px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+form {
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
+  
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+.modal-backdrop.show{
+  z-index: auto !important;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+  padding-bottom: 31px !important;
+  margin-top: 10px !important;
+}
+
+
+.nav-item a {
+  position: relative;
+  text-decoration: none;
+  color: #333; /* Color de texto por defecto */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Grosor del sombreado */
+  bottom: 0;
+  left: 0;
+  background-color: rgba(153, 185, 221, 0.7); /* Color del sombreado */
+  transform-origin: bottom right;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  transform-origin: bottom left;
+  transform: scale(1, 1);
+}
+
+.empleos img{
+  width: 45%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
