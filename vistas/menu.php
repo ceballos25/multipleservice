@@ -19,6 +19,9 @@
                 <a class="nav-link fs-5 text" href="../vistas/empleos_vigentes.php">Empleos <i class="bi bi-card-checklist"></i></a>
               </li>
               <li class="nav-item">
+                <a class="nav-link fs-5 text" href="../vistas/usuarios_creacion_vacante.php">Crear Vacante <i class="bi bi-building-add"></i></a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link fs-5 text" href="../vistas/mi_cuenta.php">Mi Cuenta <i class="bi bi-person-rolodex"></i></a>
               </li>
               <li class="nav-item">
@@ -52,10 +55,16 @@
                 <a class="nav-link fs-5 text" href="../vistas/empleos_vigentes.php">Empleos <i class="bi bi-card-checklist"></i></a>
               </li>
               <li class="nav-item">
+                <a class="nav-link fs-5 text" href="../vistas/usuarios_creacion_vacante.php">Crear Vacante <i class="bi bi-building-add"></i></a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link fs-5 text" href="../vistas/mi_cuenta.php">Mi Cuenta <i class="bi bi-person-rolodex"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 text" href="../vistas/administracion.php">Administracion <i class="bi bi-gear"></i></a>
+                <a class="nav-link fs-5 text" href="../vistas/administracion_empleos.php">Empleos <i class="bi bi-gear"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 text" href="../vistas/administracion_usuarios.php">Usuarios <i class="bi bi-gear"></i></a>
               </li>
               <li class="nav-item">
                   <a class="nav-link fs-5 text" href="../vistas/salir.php">Salir <i class="bi bi-box-arrow-right"></i></a>

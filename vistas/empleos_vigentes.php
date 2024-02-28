@@ -1,5 +1,13 @@
 <?php
-  session_start();
+session_start();
+
+// Verificar si la variable de sesión existe
+if (isset($_SESSION['nombre_usuario'])) {        
+} else {
+    // Puedes redirigir al usuario a otra página utilizando header
+    header("Location: ../index.php");
+    exit(); // Asegúrate de salir después de redirigir para evitar ejecución adicional
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
